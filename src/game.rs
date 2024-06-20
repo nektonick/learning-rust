@@ -103,17 +103,18 @@ pub struct GameLevel {
 }
 
 fn level_0(main_character: &mut Character) {
-    println!("Ты очнулся возле грязной лужи.");
-    println!("Из лужи на тебя кто-то смотрит...");
+    println!("Ты очнулся возле лужи, находящейся на обочине дороги.");
+    println!("Из лужи на тебя кто-то смотрит.");
+    println!("К сожалению, лужа слишком грязная, чтобы разобрать детали.");
 
     let attack = Confirm::new()
-        .with_prompt("Атаковать?")
+        .with_prompt("Атаковать существо, смотрящее на тебя из лужи?")
         .default(true)
         .interact()
         .unwrap();
 
     if attack {
-        println!("Упс, кажется это был ты");
+        println!("Упс...");
         attack_self(main_character);
 
         println!("******");
