@@ -1,4 +1,3 @@
-mod examples;
 mod game;
 mod render;
 

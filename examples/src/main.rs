@@ -1,5 +1,9 @@
 #![allow(warnings, unused)]
 
+fn main() {
+    examples()
+}
+
 pub fn examples() {
     println!("Hello, world!");
     println!("Sum: {}", sum(1.0, 2.0));
